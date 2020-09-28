@@ -139,31 +139,9 @@ iframe {
 .sketchfab-embed-wrapper{
     text-align: center;
 }
-/* 
-.about {
-    margin: 0;
-    width: 20%;
-    position: relative;
-    animation: yt 5s infinite linear;
-}
-
-.about img {
-    position: absolute;
-    left: 0;
-    width: 100%;
-} */
 
 .contact {
     height: 800px;
-}
-
-.anim {
-    animation: yt 5s linear infinite;
-}
-
-@keyframes yt {
-    0% {left: 0%}
-    100% {left: 100%;}
 }
 
 
