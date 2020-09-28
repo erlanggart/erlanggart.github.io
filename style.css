@@ -1,0 +1,195 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background: #202020;
+    /* filter: invert(1) hue-rotate(180deg); */
+}
+
+.navbar-brand {
+    color: #ffd700 !important;
+}
+
+.bg-dark {
+    background: transparent !important;
+}
+
+.bg-dark, .bg-light {
+    transition: all 1s;
+}
+
+.break {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    margin: auto;
+    margin-bottom: 0;
+    /* margin-top: 200px; */
+}
+
+.home {
+    display: flex;
+    width: 100%;
+    margin-top: -100px;
+    height: 800px;
+    background-image: url("/assets/img/1x/Artboard\ 1.png");
+    background-position: center;
+}
+
+.describe {
+    flex: 1;
+    padding-top: 2em;
+    font-size: 42px;
+    font-weight: 500;
+    color: #dedede;
+    letter-spacing: 3px;
+}
+
+.describe .garis {
+    /* margin-top: 0; */
+    border-top: solid whitesmoke 1px;
+    width: 14em;
+    font-size: 20px;
+}
+
+.describe hr {
+    margin: 0;
+}
+
+.describe p{
+    padding-left: 10px;
+}
+
+.kotak {
+    background: #ffd700;
+    width: 29rem;
+    letter-spacing: 2px;
+    /* padding: 7px; */
+    justify-content: center;
+    color: #202020;
+    font-size: 56px;
+    font-weight:500;
+}
+
+.profil {
+    flex: 1;
+}
+
+.profil img {
+    width: 100%;
+}
+
+.about {
+    background: #3e3e3e;
+    color: #ffd700;
+    padding: 4rem;
+    text-align: right;
+}
+
+/* .konten {
+    height: 500px;
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    border: solid white 2px;
+} */
+
+.story {
+    height: 500px;
+}
+
+.work {
+    /* background: #3e3e3e; */
+    color: #ffd700;
+    padding: 4rem;
+    text-align: right;
+}
+
+.youtube {
+    display: flex;
+    /* display: none; */
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 2rem;
+    transition: all 3s;
+    background: #3e3e3e;
+    color: #dedede;
+    border-radius: 20px;
+    /* width: 900px; */
+    
+}
+
+
+.youtube p {
+    flex: 1;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+iframe {
+    flex: 1;
+    border-radius: 20px;
+}
+
+.sketchfab-embed-wrapper{
+    text-align: center;
+}
+/* 
+.about {
+    margin: 0;
+    width: 20%;
+    position: relative;
+    animation: yt 5s infinite linear;
+}
+
+.about img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+} */
+
+.contact {
+    height: 800px;
+}
+
+.anim {
+    animation: yt 5s linear infinite;
+}
+
+@keyframes yt {
+    0% {left: 0%}
+    100% {left: 100%;}
+}
+
+
+@media only screen and (max-width: 600px) {
+    .break {
+        display: block;
+    }
+
+    .describe {
+        padding: 0;
+    }
+
+    .kotak {
+        font-size: 42px;
+        width: 24rem;
+    }
+
+    .youtube {
+        display: block;
+        padding: 1rem;
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    iframe {
+        width: 290px;
+        height: 175px;
+    }
+}
