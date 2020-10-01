@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     background: #202020;
     /* filter: invert(1) hue-rotate(180deg); */
 }
@@ -21,6 +21,7 @@ body {
 
 .bg-dark, .bg-light {
     transition: all 1s;
+    font-size: 16px;
 }
 
 .break {
@@ -34,8 +35,7 @@ body {
 .home {
     display: flex;
     width: 100%;
-    margin-top: -100px;
-    height: 800px;
+    height: 100vh;
     background-image: url("/assets/img/1x/Artboard\ 1.png");
     background-position: center;
 }
@@ -84,6 +84,7 @@ body {
 }
 
 .about {
+    height: 100vh;
     background: #3e3e3e;
     color: #ffd700;
     padding: 4rem;
@@ -111,12 +112,11 @@ body {
 
 .youtube {
     display: flex;
-    /* display: none; */
     margin: auto;
     margin-top: 100px;
     margin-bottom: 100px;
     padding: 2rem;
-    transition: all 3s;
+    /* transition: all 3s; */
     background: #3e3e3e;
     color: #dedede;
     border-radius: 20px;
@@ -131,17 +131,78 @@ body {
     padding: 2rem;
     text-align: center;
 }
+.work3d {
+    padding : 0 8rem;
+    color: #dedede;
+    text-align: center;
+    font-size: 16px;
+}
+
+.other3d {
+    width: 30vw;
+    /* justify-items: center; */
+    margin: auto;
+    text-align: center;
+    background: #ffd700;
+    color: #202020;
+    border-radius: 5px;
+}
+
 iframe {
+    /* display: flex; */
     flex: 1;
     border-radius: 20px;
+    border : solid #ffd700 5px;
+    box-sizing: border-box;
+    /* padding: 2rem; */
+}
+
+.sketchfab-embed-wrapper {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+}
+
+.sketchfab-embed-wrapper:nth-child(2){
+    flex-direction: row-reverse;
+
 }
 
 .sketchfab-embed-wrapper{
     text-align: center;
 }
 
+.workdesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: #3e3e3e;
+    color: #dedede;
+    height: 180px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+
 .contact {
-    height: 800px;
+    height: 60vh;
+    background-color: #dedede;
+    color: #202020;
+    padding: 4rem;
+    text-align: right;
+}
+
+footer {
+    font-size: 0.8rem;
+    color: #dedede;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    padding: 0;
 }
 
 
@@ -167,7 +228,15 @@ iframe {
     }
 
     iframe {
-        width: 290px;
-        height: 175px;
+        width: 200px;
+        height: 150px;
+    }
+
+    .work3d {
+    padding : 0;
+}
+    .sketchfab-embed-wrapper {
+        display: block;
+        padding: 0;
     }
 }

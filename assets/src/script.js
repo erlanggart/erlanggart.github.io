@@ -10,8 +10,8 @@
 // })
 const bg = document.querySelector(".bg-dark")
 // console.log(window);
-const yt = document.querySelector(".youtube")
-console.log(yt.scrollIntoView())
+// const yt = document.querySelector(".youtube")
+// console.log(yt.scrollIntoView())
 
 // const rec = yt.getBoundingClientRect();
 // console.log(rec)
